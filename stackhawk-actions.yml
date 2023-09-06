@@ -1,2 +1,25 @@
+# -- stackhawk configuration for  --
 app:
-applicationID: ${APP_ID:3dab9519-b576-46f8-a089-82b6dff67cc4}
+  # -- An applicationId obtained from the StackHawk platform. --
+  applicationId: ac702bc7-e7b2-4c40-9bab-2cdaf2f73adb # (required)
+  # -- The environment for the applicationId defined in the StackHawk platform. --
+  env: Development # (required)
+  # -- The url of your application to scan --
+  host: http://localhost:8080 # (required)
+
+
+# -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
+  # openApiConf:
+  #   path: /swagger.json # OR...
+#       filePath: openApi.json
+  # autoPolicy: true
+  # autoInputVectors: true
+  # Configuration Docs: https://docs.stackhawk.com/hawkscan/configuration/
+
+# -- If Authenticated Scanning is needed, add here --
+  # Authenticated Scanning Docs: https://docs.stackhawk.com/hawkscan/authenticated-scanning.html
+  # Authenticated Scanning Repo: https://github.com/kaakaww/scan-configuration/tree/main/Authentication
+
+# -- Help Section --
+  # Docs: https://docs.stackhawk.com/
+  # Contact Support: support@stackhawk.com
